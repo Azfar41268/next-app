@@ -5,11 +5,11 @@ import { Dispatch, SetStateAction, useState } from "react";
 export default function List(children: {todos: string[], setTodos: Dispatch<SetStateAction<string[]>>}) {
     const [todo, setTodo] = useState("")
     return(
-        <div className="flex flex-col justify-between items-center px-5 py-8 border-1 bg-white/30 rounded-md w-5/12 h-[80vh] text-center gap-100">
+        <div className="flex flex-col justify-between items-center px-5 py-8 border-1 bg-white/30 rounded-md w-fit lg:w-5/12 h-[100vh] lg:h-[80vh] text-center gap-100">
             <h1 className="text-3xl font-bold">
             Todo List
             </h1>
-            <div className="flex flex-col justify-between items-center h-[100vh] w-7/12 overflow-y-scroll">
+            <div className="flex flex-col justify-between items-center h-[100vh] w-fit lg:w-7/12 overflow-y-scroll">
             <ul className="flex flex-col justify-between items-center gap-4 p-4 w-full">
                 {children.todos.map((item, index) => (
                 <li key={index} className="p-5 flex justify-around items-center gap-5 font-semibold bg-white/40 border-1 rounded-md cursor-pointer hover:scale-105 duration-150 w-full">
