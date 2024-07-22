@@ -5,7 +5,7 @@ import { Dispatch, SetStateAction, useState } from "react";
 export default function List(children: {todos: string[], setTodos: Dispatch<SetStateAction<string[]>>}) {
     const [todo, setTodo] = useState("")
     return(
-        <div className="flex flex-col justify-between items-center px-5 py-8 border-1 bg-white/30 rounded-md w-fit lg:w-5/12 h-[100vh] lg:h-[80vh] text-center gap-100">
+        <div className="flex flex-col justify-between items-center px-5 py-8 border-1 bg-white/30 rounded-md w-fit lg:w-5/12 h-[80vh] text-center gap-100">
             <h1 className="text-3xl font-bold">
             Todo List
             </h1>
