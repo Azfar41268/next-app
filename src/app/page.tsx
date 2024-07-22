@@ -3,7 +3,7 @@ import List from "@/components/TodoList";
 import { useState } from "react";
 
 export default function App() {
-  const todoList = ["Hello", "Create", "Practice", "Repeat"]
+  const todoList = ["Hello", "Create", "Practice"]
   const [todos, setTodos] = useState(todoList)
 
   return (
