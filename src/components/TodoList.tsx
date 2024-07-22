@@ -23,7 +23,7 @@ export default function List(children: {todos: string[], setTodos: Dispatch<SetS
                 ))}
             </ul>
             </div>
-            <div className="flex gap-3">
+            <div className= "flex flex-col md:flex-row gap-3">
                 <input className="px-4 py-2 rounded-full" type="text" placeholder="Enter a task" value={todo} onChange={e => setTodo(e.target.value)} />
                 <button className="rounded-full px-4 py-2 text-lg font-semibold text-white bg-blue-500 hover:bg-white hover:text-blue-500 hover:scale-105 duration-200" onClick={() => children.setTodos(t => [...t, todo])}>
                     Submit
