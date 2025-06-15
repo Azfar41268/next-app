@@ -12,7 +12,7 @@ export default function List(children: {todos: string[], setTodos: Dispatch<SetS
             <div className="flex flex-col justify-between items-center h-[100vh] w-[65vw] lg:w-10/12 xl:w-7/12 overflow-y-scroll">
             <ul className="flex flex-col justify-between items-center gap-4 p-4 w-full">
                 {children.todos.map((item, index) => (
-                <li key={index} className="p-5 flex-row sm:flex-col justify-around items-center font-semibold bg-white/40 border-1 rounded-md cursor-pointer hover:scale-105 duration-150 w-full">
+                <li key={index} className="p-5 flex flex-col md:flex-row justify-around items-center font-semibold bg-white/40 border-1 rounded-md cursor-pointer hover:scale-105 duration-150 w-full">
                     <h1 className="text-xl">
                         {item}
                     </h1>
