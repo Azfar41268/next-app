@@ -3,7 +3,7 @@ import { Dispatch, SetStateAction, useState } from "react";
 
 
 export default function List(children: {todos: string[], setTodos: Dispatch<SetStateAction<string[]>>}) {
-    const [todo, setTodo] = useState("")
+    const [todo, setTodo] = useState('')
     return(
         <div className="flex flex-col justify-between items-center px-5 py-8 border-1 bg-white/30 rounded-md w-11/12 lg:w-9/12 xl:w-5/12 h-[80vh] text-center gap-100">
             <h1 className="text-3xl font-bold">
